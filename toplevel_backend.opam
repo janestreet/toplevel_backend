@@ -11,11 +11,11 @@ build: [
 ]
 depends: [
   "ocaml" {>= "4.08.0"}
-  "core_kernel"
+  "core"
   "ppx_here"
   "ppx_jane"
-  "dune"        {>= "2.0.0"}
-  "ocamlfind"   {>= "1.7.2"}
+  "dune"      {>= "2.0.0"}
+  "ocamlfind" {>= "1.7.2"}
 ]
 synopsis: "Shared backend for setting up toplevels"
 description: "
