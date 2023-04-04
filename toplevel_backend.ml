@@ -5,7 +5,11 @@ end
 
 open Compiler_modules
 
+[%%if ocaml_version >= (5, 0, 0)]
+let unsafe_string () = true
+[%%else]
 let unsafe_string () = !Clflags.unsafe_string
+[%%endif]
 
 module type S = sig
   val dir_directory : string -> unit
