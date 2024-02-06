@@ -1,4 +1,9 @@
-(library (name toplevel_backend) (public_name toplevel_backend)
+(library
+ (foreign_stubs
+  (language c)
+  (names toplevel_backend_fallback_stubs))
+ (name toplevel_backend)
+ (public_name toplevel_backend)
  (libraries ppx_here.expander core compiler-libs.common findlib.top)
- (c_names toplevel_backend_fallback_stubs)
- (preprocess (pps ppx_jane ppx_optcomp)))
+ (preprocess
+  (pps ppx_jane ppx_optcomp)))
