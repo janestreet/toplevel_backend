@@ -4,6 +4,7 @@
   (names toplevel_backend_fallback_stubs))
  (name toplevel_backend)
  (public_name toplevel_backend)
- (libraries ppx_here.expander core compiler-libs.common findlib.top)
+ (libraries base core.filename_base compiler-libs.common parsexp
+   ppx_here.expander stdio findlib.top)
  (preprocess
   (pps ppx_jane ppx_optcomp)))

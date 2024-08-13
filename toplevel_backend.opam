@@ -11,10 +11,13 @@ build: [
 ]
 depends: [
   "ocaml" {>= "5.1.0"}
+  "base"
   "core"
+  "parsexp"
   "ppx_here"
   "ppx_jane"
   "ppx_optcomp"
+  "stdio"
   "dune"        {>= "3.11.0"}
   "ocamlfind"   {>= "1.7.2"}
 ]
