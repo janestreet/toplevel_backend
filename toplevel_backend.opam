@@ -11,11 +11,14 @@ build: [
 ]
 depends: [
   "ocaml" {>= "5.1.0"}
+  "base"
   "core"
+  "parsexp"
   "ppx_here"
   "ppx_jane"
   "ppx_optcomp"
-  "dune"        {>= "3.11.0"}
+  "stdio"
+  "dune"        {>= "3.17.0"}
   "ocamlfind"   {>= "1.7.2"}
 ]
 available: arch != "arm32" & arch != "x86_32"
