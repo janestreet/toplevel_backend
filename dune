@@ -7,4 +7,4 @@
  (libraries base core.filename_base compiler-libs.common parsexp
    ppx_here.expander stdio findlib.top)
  (preprocess
-  (pps ppx_jane ppx_optcomp)))
+  (pps ppx_jane ppx_optcomp -compare-require-explicit-locality)))
